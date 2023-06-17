@@ -1,17 +1,24 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+/**
+ * main - Entry block
+ * Description: lowercase without q and e
+ * Return: 0
+ */
 int main(void)
 {
-    char lowercase = 'a';
+	char c = 'a';
 
-    while (lowercase <= 'z') {
-        if (lowercase != 'q' && lowercase != 'e') {
-            putchar(lowercase);
-        }
-        lowercase++;
-    }
+	while (c <= 'z')
+	{
+		if (c != 'q' && c != 'e')
+		{
+			putchar(c);
+		}
+		c++;
+	}
 
-    putchar('\n');
+	putchar('\n');
+	return (0);
 
-    return 0;
 }

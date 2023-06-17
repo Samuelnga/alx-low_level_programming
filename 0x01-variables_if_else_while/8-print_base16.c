@@ -1,15 +1,27 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+/**
+ * main - main block
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
+ * Return: 0
+ */
 int main(void)
 {
-    char hex_digits[] = "0123456789abcdef";
-    int i;
+	char c;
+	char d = '0';
 
-    for (i = 0; i < 16; i++) {
-        putchar(hex_digits[i]);
-    }
+	while (d <= '9')
+	{
+		putchar(d);
+		d++;
+	}
 
-    putchar('\n');
+	for (c = 'a'; c <= 'f'; c++)
+	{
+		putchar(c);
+	}
 
-    return 0;
+	putchar('\n');
+	return (0);
 }

@@ -1,23 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * main - entry block
+ * Description: alphabets in lower and upper
+ * Return: 0
+ */
 int main(void)
 {
-	int i, j;
+	char c = 'a';
 
-	i = 97;
-	j = 65;
-
-	while (i < 123)
+	while (c <= 'z')
 	{
-		putchar(i);
-		i++;
+		putchar(c);
+		c++;
 	}
+	c = 'A';
 
-	while (j < 91)
+	while (c <= 'Z')
 	{
-		putchar(j);
-		j++;
+		putchar(c);
+		c++;
 	}
-
-	putchar(10);
-
+	putchar('\n');
 	return (0);
 }

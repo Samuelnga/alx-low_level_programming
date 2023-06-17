@@ -1,15 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
+/**
+ * main - entry point
+ * Description: print alphabets
+ * Return: 0
+ */
+int main(void)
+{
+	char c = 'a';
 
-int main() {
-    int i;
-    
-    // Print the lowercase alphabet using putchar
-    for (i = 0; i < 26; i++) {
-        putchar('a' + i);
-    }
-    
-    // Print a new line
-    putchar('\n');
-    
-    return 0;
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+	putchar('\n');
+	return (0);
 }
