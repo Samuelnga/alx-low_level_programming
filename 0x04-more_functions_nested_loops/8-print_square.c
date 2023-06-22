@@ -1,29 +1,15 @@
-#include <main.h>
+8-main.c
+#include "main.h"
 
 /**
- * print_square - check for a digit
- * @n : number of _ to be printed
- * Return:void
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-
-void print_square(int n)
+int main(void)
 {
-
-	int i = 0, ii;
-
-	while (i < n && n > 0)
-	{
-		ii = 0;
-		while (ii < n)
-		{
-			_putchar('#');
-			ii++;
-		}
-
-		_putchar('\n');
-		i++;
-	}
-	if (i == 0)
-		_putchar('\n');
-
+    print_square(2);
+    print_square(10);
+    print_square(0);
+    return (0);
 }
