@@ -4,7 +4,7 @@
  * @filename: Pointer to the name of the file.
  * @text_content: Pointer to the string to add at the end of the file.
  * Return: Returns -1 if the function fails or if filename is NULL.
- * Returns -1 if the file does not exist or if the user lacks write permissions.
+ * Returns -1 if the file permissions.
  * Returns 1 on successful append.
  */
 int append_text_to_file(const char *filename, char *text_content)
